@@ -8,7 +8,7 @@ function App() {
 
       <div className="port-container">
         <div className="port-video">
-          <video src={"/videos/pf1.mkv"} autoPlay muted loop></video>
+          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
         </div>
         <div className="port-info">
           <h3>주제 : 음식어쩌고</h3>
@@ -20,7 +20,7 @@ function App() {
 
       <div className="port-container">
         <div className="port-video">
-          <video src={"/videos/pf1.mkv"} autoPlay muted loop></video>
+          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
         </div>
         <div className="port-info">
           <h3>주제 : 음식어쩌고</h3>
@@ -33,7 +33,7 @@ function App() {
 
       <div className="port-container">
         <div className="port-video">
-          <video src={"/videos/pf1.mkv"} autoPlay muted loop></video>
+          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
         </div>
         <div className="port-info">
           <h3>주제 : 음식어쩌고</h3>
