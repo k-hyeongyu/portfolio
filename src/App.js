@@ -4,7 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>OOO's Portfolio</h1>
+
+      <h1>1차 프로젝트</h1>
 
       <div className="port-container">
         <div className="port-video">
@@ -17,6 +18,8 @@ function App() {
           <p>설명 : </p>
         </div>
       </div>
+
+      <h1>2차 프로젝트</h1>
 
       <div className="port-container">
         <div className="port-video">
@@ -30,6 +33,8 @@ function App() {
           <p>github Link : <a>https://github....</a></p>
         </div>
       </div>
+
+      <h1>3차 프로젝트</h1>
 
       <div className="port-container">
         <div className="port-video">
