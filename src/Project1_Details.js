@@ -14,6 +14,12 @@ function Project1Details() {
     return (
         <div className="details-container">
             <h1>위고비의 국내 출시로 높아진 체중 감량 및 건강관리 관심에 맞춰 과학적이고 효율적인 식단 추천 및 판매 웹 서비스를 제공</h1>
+            
+            <div className="video-container">
+                <video controls className="video-player" src="/videos/1st-Project.mp4" autoPlay muted loop></video>
+            </div>
+            <br />
+            
             <div className="image-container">
                 <img
                     src="/images/1st/1차 기술스택.png"
