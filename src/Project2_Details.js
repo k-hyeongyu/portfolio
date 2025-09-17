@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './Project2_Details.css'; // 여기에 CSS 코드를 작성할 겁니다.
+import './Project2_Details.css';
 
 function Project2Details() {
-
     const [selectedImage, setSelectedImage] = useState(null);
 
     const openModal = (src) => {
@@ -18,7 +17,7 @@ function Project2Details() {
             <h1>"모두가 누릴수 있는 여행"을 목표로 이동에 불편함이 있는 사람들을 위한 편의시설 중심의 여행지 추천 및 예약 커뮤티니 플랫폼입니다.</h1>
 
             <div className="video-container">
-                <video controls style={{ width: '800px' }} className="video-player" src="/videos/2nd_Project.mp4" autoPlay muted loop></video>
+                <video controls style={{ width: '800px' }} className="video-player" src={process.env.PUBLIC_URL + "/videos/2nd_Project.mp4"} autoPlay muted loop></video>
             </div>
             <h2>시연 영상</h2>
             <br />
@@ -26,35 +25,35 @@ function Project2Details() {
             <div className="image-container">
                 <p />
                 <img
-                    src="/images/2nd/2nd_tool.png"
-                    onClick={() => openModal("/images/2nd/2nd_tool.png")}
+                    src={process.env.PUBLIC_URL + "/images/2nd/2nd_tool.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_tool.png")}
                     className="clickable-image"
                 />
                 <h2>사용한 툴</h2>
                 <p />
-                <img src="/images/2nd/2nd_ERD.png"
-                    onClick={() => openModal("/images/2nd/2nd_ERD.png")}
+                <img src={process.env.PUBLIC_URL + "/images/2nd/2nd_ERD.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_ERD.png")}
                     className="clickable-image" />
                 <h2>ERD</h2>
 
                 <p />
-                <img src="/images/2nd/2nd_MenuTree.png"
-                    onClick={() => openModal("images/2nd/2nd_MenuTree.png")}
+                <img src={process.env.PUBLIC_URL + "/images/2nd/2nd_MenuTree.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_MenuTree.png")}
                     className="clickable-image" />
                 <h2>메뉴 트리</h2>
                 <p />
-                <img src="/images/2nd/2nd_UseCase.png"
-                    onClick={() => openModal("/images/2nd/2nd_UseCase.png")}
+                <img src={process.env.PUBLIC_URL + "/images/2nd/2nd_UseCase.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_UseCase.png")}
                     className="clickable-image" />
                 <h2>유스케이스</h2>
                 <p />
-                <img src="/images/2nd/2nd_WBS.png"
-                    onClick={() => openModal("/images/2nd/2nd_WBS.png")}
+                <img src={process.env.PUBLIC_URL + "/images/2nd/2nd_WBS.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_WBS.png")}
                     className="clickable-image" />
                 <h2>WBS</h2>
                 <p />
-                <img src="/images/2nd/2nd_요구사항분석.png"
-                    onClick={() => openModal("/images/2nd/2nd_요구사항분석.png")}
+                <img src={process.env.PUBLIC_URL + "/images/2nd/2nd_요구사항분석.png"}
+                    onClick={() => openModal(process.env.PUBLIC_URL + "/images/2nd/2nd_요구사항분석.png")}
                     className="clickable-image" />
                 <h2>요구사항 분석</h2>
                 <p />
@@ -67,12 +66,10 @@ function Project2Details() {
                 <h2>후기</h2>
                 <h3>MVC패턴의 구성요소인 Controller, Service, DAO, 구현체, Mapper들의 연결고리를 찾지못해 힘들었지만 프로젝트를 통해 부족한 부분을 보완할 수 있는 계기가 되었습니다.</h3>
             </div>
-
-            {/* 모달 영역 */}
             {selectedImage && (
                 <div className="modal" onClick={closeModal}>
                     <span className="close">&times;</span>
-                    <img className="modal-content" src={selectedImage} />
+                    <img className="modal-content" src={selectedImage} alt="모달 이미지" />
                 </div>
             )}
         </div>
