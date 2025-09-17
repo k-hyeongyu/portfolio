@@ -1,54 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import Project1Details from './Project1_Details';
+import Project2Details from './Project2_Details';
+import Project3Details from './Project3_Details';
 
 function App() {
   return (
-    <div className="App">
-
-      <h1>1차 프로젝트</h1>
-
-      <div className="port-container">
-        <div className="port-video">
-          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
-        </div>
-        <div className="port-info">
-          <h3>주제 : 음식어쩌고</h3>
-          <p>일정 : </p>
-          <p>사용기술 : </p>
-          <p>설명 : </p>
-        </div>
-      </div>
-
-      <h1>2차 프로젝트</h1>
-
-      <div className="port-container">
-        <div className="port-video">
-          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
-        </div>
-        <div className="port-info">
-          <h3>주제 : 음식어쩌고</h3>
-          <p>일정 : </p>
-          <p>사용기술 : </p>
-          <p>설명 : </p>
-          <p>github Link : <a>https://github....</a></p>
-        </div>
-      </div>
-
-      <h1>3차 프로젝트</h1>
-
-      <div className="port-container">
-        <div className="port-video">
-          <video src={"https://yong-jin.github.io/web-portfolio/videos/pf1.mkv"} autoPlay muted loop></video>
-        </div>
-        <div className="port-info">
-          <h3>주제 : 음식어쩌고</h3>
-          <p>일정 : </p>
-          <p>사용기술 : </p>
-          <p>설명 : </p>
-        </div>
-      </div>
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project1-details" element={<Project1Details />} />
+        <Route path="/project2-details" element={<Project2Details />} />
+        <Route path="/project3-details" element={<Project3Details />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
