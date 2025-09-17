@@ -20,9 +20,16 @@ function Project2Details() {
             <div className="video-container">
                 <video controls className="video-player" src="/videos/3rd_Project.mkv" autoPlay muted loop></video>
             </div>
+            <h2>시연 영상</h2>
             <br />
 
             <div className="image-container">
+                <p />
+                <img src="/images/3rd/3차 툴.png"
+                    onClick={() => openModal("/images/3rd/3차 툴.png")}
+                    className="clickable-image" />
+                <h2>사용한 툴</h2>
+                <p />
                 <img src="/images/3rd/오일머니 ERD.png"
                     onClick={() => openModal("/images/3rd/오일머니 ERD.png")}
                     className="clickable-image" />

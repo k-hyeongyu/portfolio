@@ -16,17 +16,27 @@ function Project2Details() {
     return (
         <div className="details-container">
             <h1>"모두가 누릴수 있는 여행"을 목표로 이동에 불편함이 있는 사람들을 위한 편의시설 중심의 여행지 추천 및 예약 커뮤티니 플랫폼입니다.</h1>
-            
+
             <div className="video-container">
-                <video controls style={{width: '800px'}} className="video-player" src="/videos/2nd_Project.mp4" autoPlay muted loop></video>
+                <video controls style={{ width: '800px' }} className="video-player" src="/videos/2nd_Project.mp4" autoPlay muted loop></video>
             </div>
+            <h2>시연 영상</h2>
             <br />
-            
+
             <div className="image-container">
+                <p />
+                <img
+                    src="/images/2nd/2nd_tool.png"
+                    onClick={() => openModal("/images/2nd/2nd_tool.png")}
+                    className="clickable-image"
+                />
+                <h2>사용한 툴</h2>
+                <p />
                 <img src="/images/2nd/2nd_ERD.png"
                     onClick={() => openModal("/images/2nd/2nd_ERD.png")}
                     className="clickable-image" />
                 <h2>ERD</h2>
+
                 <p />
                 <img src="/images/2nd/2nd_MenuTree.png"
                     onClick={() => openModal("images/2nd/2nd_MenuTree.png")}

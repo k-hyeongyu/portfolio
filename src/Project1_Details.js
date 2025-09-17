@@ -18,9 +18,11 @@ function Project1Details() {
             <div className="video-container">
                 <video controls className="video-player" src="/videos/1st-Project.mp4" autoPlay muted loop></video>
             </div>
+            <h2>시연 영상</h2>
             <br />
             
             <div className="image-container">
+                <p/>
                 <img
                     src="/images/1st/1차 기술스택.png"
                     onClick={() => openModal("/images/1st/1차 기술스택.png")}
