@@ -9,7 +9,7 @@ import Project3Details from './Project3_Details';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/project1-details" element={<Project1Details />} />
